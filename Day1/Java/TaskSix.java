@@ -1,0 +1,1 @@
+// average of the even indexes from task five
