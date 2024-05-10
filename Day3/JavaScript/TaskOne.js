@@ -160,7 +160,7 @@ quiz()
 
 }
 
-console.log(`You got ${count} correct questions and and failed      ${counter}  questions`)
+console.log(`You got ${count} correct questions and and failed      ${counter} questions`)
 
 if(count > 5){
 
