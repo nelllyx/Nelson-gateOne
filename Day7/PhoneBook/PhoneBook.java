@@ -5,13 +5,16 @@ import java.util.ArrayList;
 
 public class PhoneBook{
 
+private static ArrayList<String> names = new ArrayList<String>();
+
+private static ArrayList<Integer> phoneNumbers = new ArrayList<Integer>();
+
+
+
+
 	public static void main(String...args){
 
 Scanner input = new Scanner(System.in);
-
-ArrayList<String> names = new ArrayList<String>();
-
-ArrayList<Integer> phoneNumbers = new ArrayList<Integer>();
 
 String prompt = """
 
@@ -122,6 +125,41 @@ System.out.println(phoneNumbers);
 
 
 }
+
+
+public static void add(){
+
+Scanner input = new Scanner(System.in);
+
+
+System.out.print("Enter first name: ");
+
+String firstName = input.next();
+
+names.add(firstName);
+
+System.out.print("Enter last name: ");
+
+String lastName = input.next();
+
+names.add(lastName);
+
+System.out.print("Enter phone number: ");
+
+int userNumber = input.nextInt();
+
+phoneNumbers.add(userNumber);
+
+System.out.println("Saving >>>>>>>>>>>>>>>");
+
+System.out.println("Saved Successfully!!");
+
+
+
+}
+
+
+
 
 
 
