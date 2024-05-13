@@ -6,21 +6,23 @@ cardNumber = list(user_input)
 
 def atm(cardDetails):
 
-	if len(cardDetails) == 16:
+	if len(cardDetails) != 16 :
 
-		return 'Valid'
+		value = 'InValid'
 
-	elif cardNumber[0] == '4' or cardNumber[0] == '5' or cardNumber[0] == '6':
+	elif cardDetails[0] != '4' or cardDetails[0] != '5' or cardDetails[0] != '6':
 
-		return 'Valid'
+		value = 'Invalid'
 	
 
-	else: return 'Invalid'
+	else: value = 'Valid'
+	return value
 
 
 
+print(atm(cardNumber))
 
-atm(cardNumber)
+
 
 
 
