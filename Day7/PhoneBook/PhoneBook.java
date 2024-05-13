@@ -68,8 +68,18 @@ System.out.println("Saving >>>>>>>>>>>>>>>");
 
 System.out.println("Saved Successfully!!");
 
+System.out.print("Do you want to save another contact? ");
 
+String userResponse = input.next();
 
+int count = 0;
+
+while(userResponse.equals( "yes")){
+
+add();
+
+}
+count++;
 
 break;
 
@@ -112,6 +122,7 @@ System.out.println(phoneNumbers);
 
 
 }
+
 
 
 
