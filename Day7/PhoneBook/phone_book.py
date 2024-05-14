@@ -95,17 +95,16 @@ def find_by_number():
 
 	user_number = int(input("Enter the number you wish to find: "))
 
-	for index in range(len(phone_number_list)-1):
+	if user_number in phone_number_list:
 
-		if user_number == phone_number_list[index]:
+		print("contact found " + str(user_number))
 
-			first = first_name_list[index]
 
-			second = last_name_list[index]
+	else: print("No match for number entered")
 
-			print (user_number, first,second, end = "")
+def find_by_fname():
 
-			
+	search_first_name = input("Enter contact first name: ")
 
 
 
@@ -117,22 +116,13 @@ def display_options(user_response):
 
 		case 2: remove_contact()
 
-		#case 3: find_by_number()
+		case 3: find_by_number()
 
 	
 
 
 
 main_menu()
-
-		
-
-#print(phone_number_list)
-
-#print(last_name_list)
-
-#print(first_name_list)
-
 
 
 
