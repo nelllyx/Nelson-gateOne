@@ -100,11 +100,35 @@ def find_by_number():
 		print("contact found " + str(user_number))
 
 
-	else: print("No match for number entered")
+	else: print("No match found for number entered")
 
 def find_by_fname():
 
 	search_first_name = input("Enter contact first name: ")
+
+	if search_first_name in first_name_list:
+
+		print("Contact found")
+
+	
+	else: print("No match found for first name entered")
+
+
+def find_by_lname():
+
+	search_last_name = input("Enter contact last name: ")
+
+	if search_last_name in last_name_list:
+
+		print("Contact found")
+
+	
+	else: print("No match found for last name entered")
+
+
+def edit_contact():
+
+	prompt("Which of your contact details will you like to edit")	
 
 
 
@@ -117,7 +141,12 @@ def display_options(user_response):
 		case 2: remove_contact()
 
 		case 3: find_by_number()
+	
+		case 4: find_by_fname()
 
+		case 5: find_by_lname()
+
+		#case 6: edit_contact()
 	
 
 
