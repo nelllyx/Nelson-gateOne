@@ -126,17 +126,26 @@ Scanner input = new Scanner(System.in);
 
 System.out.print("Enter name of contact you wish to delete: ");
 
-String deleteContact = input.next();
+String deleteContact = input.nextLine();
 
-for(String index : fnames){
+for(int index = 0; index < fnames.size(); index++){
 
 if(deleteContact.equals(index)){
 
-fnames.remove(index);
+String delete = "";
 
-lnames.remove(index);
+delete = fnames.get(index);
 
-phoneNumbers.remove(index);
+fnames.remove(delete);
+
+lnames.remove(delete);
+
+phoneNumbers.remove(delete);
+
+
+}
+
+}
 
 System.out.println(fnames);
 
@@ -144,9 +153,6 @@ System.out.println(lnames);
 
 System.out.println(phoneNumbers);
 
-}
-
-}
 
 
 }
